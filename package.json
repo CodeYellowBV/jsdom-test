@@ -1,6 +1,6 @@
 {
   "name": "jsdom-test",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Run given file through jsdom to run the unit tests and report the output in the CLI.",
   "main": "index.js",
   "bin": "./index.js",
