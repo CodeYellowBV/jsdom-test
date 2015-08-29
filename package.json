@@ -1,0 +1,26 @@
+{
+  "name": "jsdom-test",
+  "version": "0.0.1",
+  "description": "Run given file through jsdom to run the unit tests and report the output in the CLI.",
+  "main": "index.js",
+  "bin": "./index.js",
+  "peerDependencies": {
+    "jsdom": "*"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeYellowBV/jsdom-test.git"
+  },
+  "keywords": [
+    "jsdom"
+  ],
+  "author": "Kees Kluskens <kees@codeyellow.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CodeYellowBV/jsdom-test/issues"
+  },
+  "homepage": "https://github.com/CodeYellowBV/jsdom-test#readme"
+}
