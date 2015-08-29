@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var path = require('path');
 var jsdom = require('jsdom');
 var fs = require('fs');
