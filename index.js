@@ -1,10 +1,14 @@
 #!/usr/bin/env node
 var path = require('path');
 var jsdom = require('jsdom');
+var chalk = require('chalk');
 var fs = require('fs');
 
 var args = process.argv.slice(2);
 var messages = [];
+
+var success = chalk.bold.green;
+var error = chalk.bold.red;
 
 if (args.length !== 1) {
     throw new Error('This script only accepts one argument; a filepath.');
@@ -32,8 +36,8 @@ var window = exec.defaultView;
 
 window.onMochaTestFinish = function (failedCount) {
     if (failedCount > 0) {
-        console.log(failedCount + ' failing tests.');
+        console.log(error('✖ ' + failedCount + ' failing tests.'));
         process.exit(1);
     }
-    console.log('Tests succeeded.');
+    console.log(success('✓ Tests succeeded.'));
 };

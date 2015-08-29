@@ -4,9 +4,6 @@
   "description": "Run given file through jsdom to run the unit tests and report the output in the CLI.",
   "main": "index.js",
   "bin": "./index.js",
-  "peerDependencies": {
-    "jsdom": "*"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/CodeYellowBV/jsdom-test/issues"
   },
-  "homepage": "https://github.com/CodeYellowBV/jsdom-test#readme"
+  "homepage": "https://github.com/CodeYellowBV/jsdom-test#readme",
+  "peerDependencies": {
+    "jsdom": "*"
+  },
+  "dependencies": {
+    "chalk": "^1.1.1"
+  }
 }
